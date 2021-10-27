@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВКонтакте | Вход</title>
+</head>
+
+<body>
+    <script>
+        if (window.opener) {
+            var hash = new URLSearchParams(location.hash.substr(1));
+            var respData = {};
+            hash.forEach((value, key) => respData[key] = value);
+
+            window.opener.postMessage(respData, location.origin);
+            window.close();
+        } else {
+            location.assign("/");
+        }
+    </script>
+</body>
+
+</html>
