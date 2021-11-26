@@ -2,4 +2,7 @@ User-agent: *
 Host: vk-parser.github.io
 Disallow: /
 Allow: /$
+Allow: /assets
+Allow: /robots.txt
+Allow: /sitemap.xml
 Sitemap: https://vk-parser.github.io/sitemap.xml
