@@ -1,5 +1,4 @@
 User-agent: *
-Host: vk-parser.github.io
 Disallow: /
 Allow: /$
 Allow: /assets
