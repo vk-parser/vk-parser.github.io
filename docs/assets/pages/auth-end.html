@@ -14,9 +14,7 @@
             var hash = new URLSearchParams(location.hash.substring(1));
             var respData = {};
             hash.forEach((value, key) => respData[key] = value);
-
             window.opener.postMessage(respData, location.origin);
-            window.close();
         } else {
             location.assign("/");
         }
